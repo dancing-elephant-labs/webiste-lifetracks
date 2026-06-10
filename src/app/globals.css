@@ -80,4 +80,17 @@
       radial-gradient(at 0% 100%, rgba(16, 185, 129, var(--mesh-opacity)) 0px, transparent 50%),
       radial-gradient(at 50% 50%, rgba(59, 130, 246, calc(var(--mesh-opacity) / 2)) 0px, transparent 50%);
   }
+
+  .logo-dark-theme {
+    display: block;
+  }
+  .logo-light-theme {
+    display: none;
+  }
+  .light .logo-dark-theme {
+    display: none;
+  }
+  .light .logo-light-theme {
+    display: block;
+  }
 }

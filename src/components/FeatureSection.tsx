@@ -9,36 +9,42 @@ const features = [
     description: "Your life story, beautifully rendered in a scrollable, interactive vertical timeline.",
     icon: History,
     color: "bg-indigo-500",
+    shadow: "shadow-indigo-500/10",
   },
   {
     title: "Cloud Vault",
     description: "Securely backup your precious media to Google Drive with end-to-end integration.",
     icon: Cloud,
     color: "bg-sky-500",
+    shadow: "shadow-sky-500/10",
   },
   {
     title: "Memory Prompts",
     description: "Intelligent notifications that remind you to capture life's most meaningful moments.",
     icon: Bell,
     color: "bg-amber-500",
+    shadow: "shadow-amber-500/10",
   },
   {
     title: "Rich Media Support",
     description: "Attach photos, videos, and voice notes to every memory for a full sensory experience.",
     icon: ImageIcon,
     color: "bg-purple-500",
+    shadow: "shadow-purple-500/10",
   },
   {
     title: "Privacy Center",
     description: "You own your data. Our Privacy Center gives you full control over your digital archive.",
     icon: Shield,
     color: "bg-emerald-500",
+    shadow: "shadow-emerald-500/10",
   },
   {
     title: "Multiple Profiles",
     description: "Manage separate journeys for family members and keep everyone's story alive.",
     icon: Users,
     color: "bg-rose-500",
+    shadow: "shadow-rose-500/10",
   },
 ];
 
@@ -79,7 +85,7 @@ export default function FeatureSection() {
               whileHover={{ y: -5 }}
               className="p-8 rounded-3xl glass hover:bg-background/80 transition-all group cursor-default"
             >
-              <div className={`w-12 h-12 ${feature.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-${feature.color.split('-')[1]}-500/10 group-hover:scale-110 transition-transform`}>
+              <div className={`w-12 h-12 ${feature.color} ${feature.shadow} rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform`}>
                 <feature.icon className="text-white w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-foreground">{feature.title}</h3>

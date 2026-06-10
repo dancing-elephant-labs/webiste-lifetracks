@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+    <main className="min-h-screen bg-background text-foreground selection:bg-primary/30 bg-mesh overflow-x-hidden">
       <Navbar />
       
       <div className="container mx-auto px-6 pt-32 pb-24">
@@ -27,18 +27,52 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">2. Collection of Your Information</h2>
               <p>
-                We may collect information about you in a variety of ways. The information we may collect 
-                via the Application depends on the content and materials you use, and includes:
+                We may collect information about you and your interactions with LifeTracks in a variety of ways. The information we may collect includes:
               </p>
               <ul className="list-disc pl-6 mt-4 space-y-2">
-                <li><strong>Personal Data:</strong> Personally identifiable information, such as your name and email address.</li>
-                <li><strong>Multimedia Data:</strong> Photos, videos, and voice notes that you choose to upload to your timeline.</li>
-                <li><strong>Location Data:</strong> Geotags associated with your entries, if you grant us permission to access location services.</li>
+                <li><strong>Account &amp; Authentication Data:</strong> Personally identifiable information, such as your name, email address, and authentication identifiers when you sign in using Google Sign-In or Apple Sign-In.</li>
+                <li><strong>Profiles &amp; Third-Party Data:</strong> Names, relationships (e.g., family, friend, partner), and important dates (e.g., birthdays) of individuals you add to your timeline. You represent that you have obtained the necessary consent to provide this information.</li>
+                <li><strong>Multimedia Metadata:</strong> File dimensions, video durations, sizes, and Google Drive file identifiers. The actual multimedia files (photos, videos, and voice notes) are **never** uploaded to or stored on our servers; they are stored directly and securely in your own personal Google Drive account.</li>
+                <li><strong>Profile Photos:</strong> Avatar images that you choose to upload for your life profiles. If cloud sync is enabled, these are stored securely in our Firebase Storage; otherwise, they are cached locally on your device.</li>
+                <li><strong>Location Data:</strong> Geotags (latitude and longitude) associated with your entries and events to auto-fill locations, if you grant us permission to access location services.</li>
+                <li><strong>Device &amp; Notification Data:</strong> Device identifiers, platform type (Android/iOS), last-seen timestamps, and Firebase Cloud Messaging (FCM) tokens required to deliver push notifications and memory prompts.</li>
+                <li><strong>Subscription &amp; Purchase Info:</strong> Plan tier details (Free vs. Premium), subscription status, product IDs, and validity/renewal timestamps. All payments are securely processed directly by Apple App Store or Google Play Store.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">3. Security of Your Information</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">3. Device Permissions</h2>
+              <p>
+                To provide features like event reminders and media uploads, the LifeTracks mobile app may request access to:
+              </p>
+              <ul className="list-disc pl-6 mt-4 space-y-2">
+                <li><strong>Camera &amp; Microphone:</strong> To capture photos and record videos directly for your timeline events.</li>
+                <li><strong>Photo Library:</strong> To select and attach existing photos and videos to your private events.</li>
+                <li><strong>Location Services:</strong> To automatically detect and fill in the location of your events.</li>
+                <li><strong>Notifications:</strong> To deliver scheduled memory prompts and timeline updates.</li>
+              </ul>
+              <p className="mt-4">
+                You can grant or revoke these permissions at any time through your device's system settings.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mb-4">4. Google Drive Integration</h2>
+              <p>
+                LifeTracks integrates with Google Drive to enable secure, private backups of your timeline media. By connecting your Google Drive account, you grant LifeTracks access to the restricted <code>https://www.googleapis.com/auth/drive.file</code> scope.
+              </p>
+              <p className="mt-4">
+                This integration is designed with your privacy in mind:
+              </p>
+              <ul className="list-disc pl-6 mt-4 space-y-2">
+                <li><strong>Restricted Scope:</strong> LifeTracks can only access, modify, or delete files and folders that were specifically created by the LifeTracks app. We have **no access** to your other Google Drive files, folders, or documents.</li>
+                <li><strong>Self-Hosted Storage:</strong> All media files uploaded to the timeline are transferred directly from your device to your personal Google Drive (within a folder named <code>LifeTracks</code>). We do not store, copy, or process your files on our servers.</li>
+                <li><strong>Access Control:</strong> You can disconnect your Google Drive connection at any time in the app settings or by revoking permissions in your Google Account security settings.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mb-4">5. Security of Your Information</h2>
               <p>
                 We use administrative, technical, and physical security measures to help protect your personal information. 
                 While we have taken reasonable steps to secure the personal information you provide to us, please be aware 
@@ -48,7 +82,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Your Rights</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">6. Your Rights</h2>
               <p>
                 You have the right to access, delete, or modify the data we have collected about you. Since LifeTracks 
                 prioritizes user ownership, you can export your entire timeline at any time or delete your account 
@@ -57,7 +91,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Contact Us</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">7. Contact Us</h2>
               <p>
                 If you have questions or comments about this Privacy Policy, please contact us at:
                 <br /><br />

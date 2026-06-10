@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 export function useTheme() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -21,5 +21,12 @@ export function useTheme() {
     return () => observer.disconnect();
   }, []);
 
-  return { theme, mounted };
+  const toggleTheme = useCallback(() => {
+    const isLight = document.documentElement.classList.contains("light");
+    const newTheme = isLight ? "dark" : "light";
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.classList.toggle("light", newTheme === "light");
+  }, []);
+
+  return { theme, toggleTheme, mounted };
 }

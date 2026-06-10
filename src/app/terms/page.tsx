@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export default function TermsOfService() {
   return (
-    <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+    <main className="min-h-screen bg-background text-foreground selection:bg-primary/30 bg-mesh overflow-x-hidden">
       <Navbar />
       
       <div className="container mx-auto px-6 pt-32 pb-24">
@@ -38,16 +38,30 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">3. User Content</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">3. User Content &amp; Third-Party Profiles</h2>
               <p>
-                You retain all rights to the content you upload to LifeTracks. By uploading content, 
-                you grant us a limited license to host and display that content solely for the purpose 
-                of providing the service to you. We do not claim ownership of your memories.
+                You retain all rights to the text data, profile information, and metadata you upload or input to LifeTracks (stored securely in our Firestore databases). We do not claim ownership of your memories or timeline records.
+              </p>
+              <p className="mt-4">
+                <strong>Self-Hosted Media Storage:</strong> The actual multimedia files (photos, videos, and voice notes) that you select for your timeline events are stored directly in your own Google Drive account. We do not host or claim any license to host your event media files on our servers. You remain entirely responsible for managing your Google Drive files and storage limits.
+              </p>
+              <p className="mt-4">
+                If you input or upload personal information of third parties (such as family members, friends, or partners) to create profiles or add events, you represent and warrant that you have obtained the necessary consent or authority from such individuals (or their legal guardians, in the case of minors) to provide this information.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Disclaimer</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">4. Subscriptions &amp; Payments</h2>
+              <p>
+                LifeTracks offers subscription plans (e.g., Free, Premium) that govern your account limits (such as profile and event quotas). 
+                Subscriptions and payments are managed and processed through Apple App Store and Google Play Store. By purchasing a subscription, 
+                you agree to their respective terms and billing policies. Subscriptions will automatically renew unless canceled at least 24 hours 
+                before the end of the current billing cycle.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-foreground mb-4">5. Disclaimer</h2>
               <p>
                 The materials on LifeTracks are provided on an 'as is' basis. LifeTracks makes no warranties, 
                 expressed or implied, and hereby disclaims and negates all other warranties including, 
@@ -57,7 +71,7 @@ export default function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Governing Law</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">6. Governing Law</h2>
               <p>
                 These terms and conditions are governed by and construed in accordance with the laws of 
                 your jurisdiction and you irrevocably submit to the exclusive jurisdiction of the courts 

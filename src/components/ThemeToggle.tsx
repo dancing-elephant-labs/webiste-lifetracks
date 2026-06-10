@@ -1,26 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "@/hooks/useTheme";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as "dark" | "light" | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.classList.toggle("light", savedTheme === "light");
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-    document.documentElement.classList.toggle("light", newTheme === "light");
-  };
+  const { theme, toggleTheme, mounted } = useTheme();
 
   return (
     <button
@@ -29,7 +14,9 @@ export default function ThemeToggle() {
       aria-label="Toggle Theme"
     >
       <AnimatePresence mode="wait">
-        {theme === "dark" ? (
+        {!mounted ? (
+          <div key="placeholder" className="w-5 h-5" />
+        ) : theme === "dark" ? (
           <motion.div
             key="moon"
             initial={{ scale: 0.5, opacity: 0, rotate: -45 }}
@@ -37,7 +24,7 @@ export default function ThemeToggle() {
             exit={{ scale: 0.5, opacity: 0, rotate: 45 }}
             transition={{ duration: 0.2 }}
           >
-            <Moon className="w-5 h-5 text-white" />
+            <Moon className="w-5 h-5 text-foreground" />
           </motion.div>
         ) : (
           <motion.div

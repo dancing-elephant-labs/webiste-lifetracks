@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Sparkles, Heart, Rocket, Shield } from "lucide-react";
+import { Sparkles, Shield } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -42,36 +42,6 @@ export default function AboutPage() {
               your memories belong to you and only you. No ads, no tracking, no 
               compromises.
             </p>
-          </div>
-        </div>
-
-        {/* The Team / Dancing Elephant Labs */}
-        <div className="glass-elevated p-12 md:p-20 rounded-[3.5rem] relative overflow-hidden text-center">
-          <div className="absolute -top-24 -left-24 w-64 h-64 bg-primary/20 rounded-full blur-[100px]" />
-          
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 relative z-10">
-            Powered by <br />
-            <span className="text-gradient">Dancing Elephant Labs</span>
-          </h2>
-          <p className="text-foreground/60 text-lg md:text-xl max-w-2xl mx-auto mb-12 relative z-10">
-            LifeTracks is a product of Dancing Elephant Labs, a collective of designers 
-            and engineers dedicated to building tools that enhance the human experience. 
-            We believe in software that feels alive, responsive, and meaningful.
-          </p>
-          
-          <div className="flex justify-center gap-12 relative z-10">
-            <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-foreground mb-1">2026</div>
-              <div className="text-sm text-foreground/40 uppercase tracking-widest">Founded</div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-foreground mb-1">100%</div>
-              <div className="text-sm text-foreground/40 uppercase tracking-widest">User Owned</div>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-foreground mb-1">Global</div>
-              <div className="text-sm text-foreground/40 uppercase tracking-widest">Community</div>
-            </div>
           </div>
         </div>
       </div>
