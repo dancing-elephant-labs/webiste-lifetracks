@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
               <p>
                 If you have questions or comments about this Privacy Policy, please contact us at:
                 <br /><br />
-                <strong>Email:</strong> privacy@lifetracks.app
+                <strong>Email:</strong> support@lifetracks.io
               </p>
             </section>
           </div>

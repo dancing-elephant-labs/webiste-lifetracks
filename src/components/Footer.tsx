@@ -30,11 +30,11 @@ export default function Footer() {
             <Link href="/about" className="hover:text-primary transition-colors">About</Link>
             <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
-            <a href="mailto:support@lifetracks.app" className="hover:text-primary transition-colors">Contact</a>
+            <a href="mailto:support@lifetracks.io" className="hover:text-primary transition-colors">Contact</a>
           </div>
           <p className="text-sm text-foreground/30 font-medium text-center md:text-right">
             © 2026 LifeTracks. <br className="md:hidden" />
-            A Product of Dancing Elephant Labs.
+            All rights reserved. A Product of Dancing Elephant Labs.
           </p>
         </div>
       </div>
