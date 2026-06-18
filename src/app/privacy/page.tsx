@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
               <p>
-                At LifeTracks, we take your privacy seriously. This Privacy Policy explains how we collect, 
+                At Kintra, we take your privacy seriously. This Privacy Policy explains how we collect, 
                 use, disclose, and safeguard your information when you use our mobile application and website. 
                 Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, 
                 please do not access the application.
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">2. Collection of Your Information</h2>
               <p>
-                We may collect information about you and your interactions with LifeTracks in a variety of ways. The information we may collect includes:
+                We may collect information about you and your interactions with Kintra in a variety of ways. The information we may collect includes:
               </p>
               <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li><strong>Account &amp; Authentication Data:</strong> Personally identifiable information, such as your name, email address, and authentication identifiers when you sign in using Google Sign-In or Apple Sign-In.</li>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">3. Device Permissions</h2>
               <p>
-                To provide features like event reminders and media uploads, the LifeTracks mobile app may request access to:
+                To provide features like event reminders and media uploads, the Kintra mobile app may request access to:
               </p>
               <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li><strong>Camera &amp; Microphone:</strong> To capture photos and record videos directly for your timeline events.</li>
@@ -52,21 +52,21 @@ export default function PrivacyPolicy() {
                 <li><strong>Notifications:</strong> To deliver scheduled memory prompts and timeline updates.</li>
               </ul>
               <p className="mt-4">
-                You can grant or revoke these permissions at any time through your device's system settings.
+                You can grant or revoke these permissions at any time through your {"device's"} system settings.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">4. Google Drive Integration</h2>
               <p>
-                LifeTracks integrates with Google Drive to enable secure, private backups of your timeline media. By connecting your Google Drive account, you grant LifeTracks access to the restricted <code>https://www.googleapis.com/auth/drive.file</code> scope.
+                Kintra integrates with Google Drive to enable secure, private backups of your timeline media. By connecting your Google Drive account, you grant Kintra access to the restricted <code>https://www.googleapis.com/auth/drive.file</code> scope.
               </p>
               <p className="mt-4">
                 This integration is designed with your privacy in mind:
               </p>
               <ul className="list-disc pl-6 mt-4 space-y-2">
-                <li><strong>Restricted Scope:</strong> LifeTracks can only access, modify, or delete files and folders that were specifically created by the LifeTracks app. We have **no access** to your other Google Drive files, folders, or documents.</li>
-                <li><strong>Self-Hosted Storage:</strong> All media files uploaded to the timeline are transferred directly from your device to your personal Google Drive (within a folder named <code>LifeTracks</code>). We do not store, copy, or process your files on our servers.</li>
+                <li><strong>Restricted Scope:</strong> Kintra can only access, modify, or delete files and folders that were specifically created by the Kintra app. We have **no access** to your other Google Drive files, folders, or documents.</li>
+                <li><strong>Self-Hosted Storage:</strong> All media files uploaded to the timeline are transferred directly from your device to your personal Google Drive (within a folder named <code>Kintra</code>). We do not store, copy, or process your files on our servers.</li>
                 <li><strong>Access Control:</strong> You can disconnect your Google Drive connection at any time in the app settings or by revoking permissions in your Google Account security settings.</li>
               </ul>
             </section>
@@ -84,7 +84,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">6. Your Rights</h2>
               <p>
-                You have the right to access, delete, or modify the data we have collected about you. Since LifeTracks 
+                You have the right to access, delete, or modify the data we have collected about you. Since Kintra 
                 prioritizes user ownership, you can export your entire timeline at any time or delete your account 
                 and all associated data permanently.
               </p>

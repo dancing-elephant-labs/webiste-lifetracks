@@ -7,6 +7,7 @@ export function useTheme() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    /* eslint-disable react-hooks/set-state-in-effect */
     setMounted(true);
     const checkTheme = () => {
       const isLight = document.documentElement.classList.contains("light");
@@ -14,6 +15,7 @@ export function useTheme() {
     };
     
     checkTheme();
+    /* eslint-enable react-hooks/set-state-in-effect */
     
     const observer = new MutationObserver(checkTheme);
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });

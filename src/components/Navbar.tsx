@@ -21,21 +21,19 @@ export default function Navbar() {
         <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
           <div className="relative w-32 h-10 overflow-hidden">
             <Image 
-              src="/images/logo-dark.svg" 
-              alt="LifeTracks Logo" 
+              src="/images/logo-dark.png" 
+              alt="Kintra Logo" 
               fill
-              sizes="128px"
+              sizes="150px"
               className="object-contain logo-dark-theme"
-              priority
               loading="eager"
             />
             <Image 
-              src="/images/logo-light.svg" 
-              alt="LifeTracks Logo" 
+              src="/images/logo-light.png" 
+              alt="Kintra Logo" 
               fill
-              sizes="128px"
+              sizes="150px"
               className="object-contain logo-light-theme"
-              priority
               loading="eager"
             />
           </div>

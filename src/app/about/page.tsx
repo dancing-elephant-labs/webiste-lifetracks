@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h1 className="text-5xl md:text-7xl font-bold mb-8">Our Vision</h1>
           <p className="text-xl text-foreground/60 leading-relaxed">
-            At LifeTracks, we believe that every human life is a unique masterpiece. 
+            At Kintra, we believe that every human life is a unique masterpiece. 
             Our mission is to give you the tools to curate, document, and celebrate 
             your journey with the cinematic flair it deserves.
           </p>
@@ -26,8 +26,8 @@ export default function AboutPage() {
             </div>
             <h3 className="text-2xl font-bold mb-4">Cinematic Storytelling</h3>
             <p className="text-foreground/50 leading-relaxed">
-              We don't just store data; we help you build a narrative. From the first steps 
-              of a child to the summits of your career, LifeTracks turns raw memories 
+              We {"don't"} just store data; we help you build a narrative. From the first steps 
+              of a child to the summits of your career, Kintra turns raw memories 
               into a beautiful, interactive timeline.
             </p>
           </div>

@@ -8,8 +8,8 @@ const features = [
     title: "Visual Timelines",
     description: "Your life story, beautifully rendered in a scrollable, interactive vertical timeline.",
     icon: History,
-    color: "bg-indigo-500",
-    shadow: "shadow-indigo-500/10",
+    color: "bg-blue-600",
+    shadow: "shadow-blue-600/10",
   },
   {
     title: "Cloud Vault",
@@ -29,22 +29,22 @@ const features = [
     title: "Rich Media Support",
     description: "Attach photos, videos, and voice notes to every memory for a full sensory experience.",
     icon: ImageIcon,
-    color: "bg-purple-500",
-    shadow: "shadow-purple-500/10",
+    color: "bg-indigo-500",
+    shadow: "shadow-indigo-500/10",
   },
   {
     title: "Privacy Center",
     description: "You own your data. Our Privacy Center gives you full control over your digital archive.",
     icon: Shield,
-    color: "bg-emerald-500",
-    shadow: "shadow-emerald-500/10",
+    color: "bg-blue-500",
+    shadow: "shadow-blue-500/10",
   },
   {
     title: "Multiple Profiles",
     description: "Manage separate journeys for family members and keep everyone's story alive.",
     icon: Users,
-    color: "bg-rose-500",
-    shadow: "shadow-rose-500/10",
+    color: "bg-amber-600",
+    shadow: "shadow-amber-600/10",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function FeatureSection() {
             transition={{ delay: 0.1 }}
             className="text-foreground/60 text-lg max-w-2xl mx-auto"
           >
-            LifeTracks is more than just a journal. It's a living archive of your
+            Kintra is more than just a journal. It{"'s"} a living archive of your
             existence, designed to be as vibrant and dynamic as you are.
           </motion.p>
         </div>

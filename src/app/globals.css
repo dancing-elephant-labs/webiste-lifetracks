@@ -2,27 +2,27 @@
 
 :root {
   /* Dark Theme (Default) */
-  --background: #0f172a;
-  --foreground: #f8fafc;
-  --primary: #6366f1;
-  --secondary: #10b981;
-  --accent: #f43f5e;
-  --surface: #1e293b;
-  --surface-elevated: #334155;
+  --background: #0a0e17;
+  --foreground: #f5f7fa;
+  --primary: #1b3b6f;
+  --secondary: #7fa99b;
+  --accent: #e07a5f;
+  --surface: #121824;
+  --surface-elevated: #1b2434;
   --border: rgba(255, 255, 255, 0.1);
   --mesh-opacity: 0.15;
 }
 
 .light {
   /* Light Theme */
-  --background: #f8fafc;
-  --foreground: #0f172a;
-  --primary: #4f46e5;
-  --secondary: #059669;
-  --accent: #e11d48;
+  --background: #faf8f5;
+  --foreground: #0a0e17;
+  --primary: #12284c;
+  --secondary: #7fa99b;
+  --accent: #c4604a;
   --surface: #ffffff;
-  --surface-elevated: #f1f5f9;
-  --border: rgba(15, 23, 42, 0.08);
+  --surface-elevated: #f2efe9;
+  --border: rgba(10, 14, 23, 0.08);
   --mesh-opacity: 0.08;
 }
 
@@ -74,11 +74,11 @@
   
   .bg-mesh {
     background-image: 
-      radial-gradient(at 0% 0%, rgba(99, 102, 241, var(--mesh-opacity)) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(14, 165, 233, var(--mesh-opacity)) 0px, transparent 50%),
-      radial-gradient(at 100% 100%, rgba(139, 92, 246, var(--mesh-opacity)) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, rgba(16, 185, 129, var(--mesh-opacity)) 0px, transparent 50%),
-      radial-gradient(at 50% 50%, rgba(59, 130, 246, calc(var(--mesh-opacity) / 2)) 0px, transparent 50%);
+      radial-gradient(at 0% 0%, rgba(27, 59, 111, var(--mesh-opacity)) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(127, 169, 155, var(--mesh-opacity)) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(58, 95, 155, var(--mesh-opacity)) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(224, 122, 95, var(--mesh-opacity)) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(27, 59, 111, calc(var(--mesh-opacity) / 2)) 0px, transparent 50%);
   }
 
   .logo-dark-theme {

@@ -19,21 +19,19 @@ export default function Hero() {
         >
           <div className="relative w-32 h-8 overflow-hidden">
             <Image
-              src="/images/logo-dark.svg"
-              alt="Logo"
+              src="/images/logo-dark.png"
+              alt="Kintra Logo"
               fill
-              sizes="128px"
+              sizes="150px"
               className="object-contain logo-dark-theme"
-              priority
               loading="eager"
             />
             <Image
-              src="/images/logo-light.svg"
-              alt="Logo"
+              src="/images/logo-light.png"
+              alt="Kintra Logo"
               fill
-              sizes="128px"
+              sizes="150px"
               className="object-contain logo-light-theme"
-              priority
               loading="eager"
             />
           </div>
@@ -57,7 +55,7 @@ export default function Hero() {
           className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/60 mb-12"
         >
           Capture every milestone, every feeling, and every memory in a beautiful,
-          interactive timeline. LifeTracks helps you document your journey
+          interactive timeline. Kintra helps you document your journey
           with cinematic flair.
         </motion.p>
 

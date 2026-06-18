@@ -11,15 +11,15 @@ export default function Footer() {
           <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <div className="relative w-32 h-10 overflow-hidden">
               <Image
-                src="/images/logo-dark.svg"
-                alt="LifeTracks Logo"
+                src="/images/logo-dark.png"
+                alt="Kintra Logo"
                 fill
-                sizes="128px"
+                sizes="150px"
                 className="object-contain logo-dark-theme"
               />
               <Image
-                src="/images/logo-light.svg"
-                alt="LifeTracks Logo"
+                src="/images/logo-light.png"
+                alt="Kintra Logo"
                 fill
                 sizes="128px"
                 className="object-contain logo-light-theme"
@@ -33,7 +33,7 @@ export default function Footer() {
             <a href="mailto:support@lifetracks.io" className="hover:text-primary transition-colors">Contact</a>
           </div>
           <p className="text-sm text-foreground/30 font-medium text-center md:text-right">
-            © 2026 LifeTracks. <br className="md:hidden" />
+            © 2026 Kintra. <br className="md:hidden" />
             All rights reserved. A Product of Dancing Elephant Labs.
           </p>
         </div>

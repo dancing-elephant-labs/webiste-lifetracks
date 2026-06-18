@@ -13,8 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LifeTracks | Document Your Journey",
-  description: "Capture, organize, and reflect on your life's most meaningful moments with LifeTracks.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  title: "Kintra | Create event timelines for your life and those who shape it",
+  description: "Kintra is a privacy-first digital sanctuary that allows you to chronicle your life journey and weave the timelines of the people who shape it, securing your memories and media in your own Cloud Vault (Google Drive).",
+  openGraph: {
+    title: "Kintra | Create event timelines for your life and those who shape it",
+    description: "Kintra is a privacy-first digital sanctuary that allows you to chronicle your life journey and weave the timelines of the people who shape it.",
+    images: ["/images/og-card.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kintra | Create event timelines for your life and those who shape it",
+    description: "Kintra is a privacy-first digital sanctuary that allows you to chronicle your life journey and weave the timelines of the people who shape it.",
+    images: ["/images/og-card.png"],
+  },
 };
 
 export default function RootLayout({
