@@ -60,17 +60,26 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
+          id="download"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 scroll-mt-32"
         >
-          <button className="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/30">
+          <button
+            onClick={() => alert("Kintra for iOS is coming soon! Feel free to join our Android testing program in the meantime.")}
+            className="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/30 cursor-pointer"
+          >
             Download for iOS
           </button>
-          <button className="w-full sm:w-auto bg-foreground/5 text-foreground border border-border px-8 py-4 rounded-xl font-bold text-lg hover:bg-foreground/10 hover:scale-105 active:scale-95 transition-all shadow-md backdrop-blur-sm">
+          <a
+            href="https://play.google.com/apps/testing/com.delabs.life_tracks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-foreground/5 text-foreground border border-border px-8 py-4 rounded-xl font-bold text-lg hover:bg-foreground/10 hover:scale-105 active:scale-95 transition-all shadow-md backdrop-blur-sm cursor-pointer"
+          >
             Download for Android
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

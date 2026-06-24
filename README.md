@@ -50,28 +50,6 @@ npm run build
 
 ---
 
-## Deployment Guide
-
-This repository is pre-configured for automated deployment to **GitHub Pages** using GitHub Actions.
-
-### Automated GitHub Pages Deployment
-
-When you push code to the `main` branch, the workflow at `.github/workflows/deploy.yml` automatically triggers to compile the Next.js project and deploy it.
-
-#### Step 1: Configure Repository Permissions
-To allow the GitHub Actions workflow to publish your site:
-1. On GitHub, navigate to your repository's **Settings**.
-2. Click **Pages** in the sidebar.
-3. Under **Build and deployment -> Source**, select **GitHub Actions**.
-
-#### Step 2: Custom Domains
-Deploying to a Custom Domain (Recommended)
-If you are deploying to a custom domain (e.g., `kintra.lifetracks.io` or `kintra.io`):
-1. In the **Settings -> Pages** tab on GitHub, enter your domain under **Custom domain** and save.
-2. The site will resolve at the root domain, and no extra path configuration is required in this repository.
-
----
-
 ## License
 
 This project is licensed under the terms of the MIT License. See [LICENSE](LICENSE) for details.

@@ -44,13 +44,13 @@ export default function Navbar() {
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <Link href="/#features" className="hover:text-primary transition-colors">Features</Link>
           <ThemeToggle />
-          <button className="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-xl transition-all font-bold shadow-lg shadow-primary/25 hover:scale-105 active:scale-95">
+          <Link href="/#download" className="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-xl transition-all font-bold shadow-lg shadow-primary/25 hover:scale-105 active:scale-95 cursor-pointer text-center">
             Download App
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-foreground" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-foreground cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </motion.div>
@@ -65,9 +65,9 @@ export default function Navbar() {
           <Link href="/about" className="text-xl font-semibold text-foreground/70 hover:text-foreground py-3 border-b border-border" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="/#features" className="text-xl font-semibold text-foreground/70 hover:text-foreground py-3 border-b border-border" onClick={() => setIsOpen(false)}>Features</Link>
           <a href="#" className="text-xl font-semibold text-foreground/70 hover:text-foreground py-3 border-b border-border" onClick={() => setIsOpen(false)}>Community</a>
-          <button className="bg-primary text-white px-5 py-4 rounded-xl font-bold text-lg mt-4 shadow-xl shadow-primary/20">
+          <Link href="/#download" className="bg-primary text-white px-5 py-4 rounded-xl font-bold text-lg mt-4 shadow-xl shadow-primary/20 cursor-pointer text-center" onClick={() => setIsOpen(false)}>
             Download App
-          </button>
+          </Link>
         </motion.div>
       )}
     </nav>
