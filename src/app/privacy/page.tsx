@@ -57,24 +57,58 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Google Drive Integration</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">4. Google User Data &amp; API Services Disclosure</h2>
               <p>
-                Kintra integrates with Google Drive to enable secure, private backups of your timeline media. By connecting your Google Drive account, you grant Kintra access to the restricted <code>https://www.googleapis.com/auth/drive.file</code> scope.
+                Kintra integrates with Google APIs (Google Sign-In and Google Drive) to authenticate your account and securely back up your timeline media. 
+                We are committed to handling your Google user data with the highest standards of privacy and security.
               </p>
-              <p className="mt-4">
-                This integration is designed with your privacy in mind:
-              </p>
-              <ul className="list-disc pl-6 mt-4 space-y-2">
-                <li><strong>Restricted Scope:</strong> Kintra can only access, modify, or delete files and folders that were specifically created by the Kintra app. We have **no access** to your other Google Drive files, folders, or documents.</li>
-                <li><strong>Self-Hosted Storage:</strong> All media files uploaded to the timeline are transferred directly from your device to your personal Google Drive (within a folder named <code>Kintra</code>). We do not store, copy, or process your files on our servers.</li>
-                <li><strong>Access Control:</strong> You can disconnect your Google Drive connection at any time in the app settings or by revoking permissions in your Google Account security settings.</li>
-              </ul>
+              
+              <div className="mt-4 space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground">A. Google Data We Access and How We Use It</h3>
+                  <ul className="list-disc pl-6 mt-2 space-y-1">
+                    <li><strong>Google Profile Info (Name, Email Address, Profile Picture URL):</strong> Accessed during Google Sign-In to authenticate you, create your Kintra account, and personalize your profile.</li>
+                    <li><strong>Google Drive Files (Restricted Scope):</strong> By linking your Google Drive, you grant Kintra access to the restricted <code>https://www.googleapis.com/auth/drive.file</code> scope. We use this access solely to create a dedicated backup folder (named <code>Kintra</code>) and to upload, retrieve, update, or delete timeline media files (photos, videos, audio notes) that you explicitly choose to back up.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-foreground">B. Storage and Retention of Google User Data</h3>
+                  <ul className="list-disc pl-6 mt-2 space-y-1">
+                    <li>Your account profile info (name, email) is securely stored in our production Firebase database to manage your account.</li>
+                    <li>Your Google Drive media files are stored directly on your personal Google Drive account. Kintra does **not** upload, copy, or retain your Google Drive files or content on our own servers.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-foreground">C. Sharing and Transfer of Google User Data</h3>
+                  <p className="mt-1">
+                    We **never** sell, rent, or trade your Google user data with third-party tools, external developers, advertisers, or any other entities. 
+                    The data is accessed and used strictly to deliver the Kintra timeline and vault features to you. We do not use Google user data to serve ads or for profiling.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-foreground">D. Google API Limited Use Policy Compliance</h3>
+                  <p className="mt-1 font-medium">
+                    Kintra's use and transfer of information received from Google APIs to any other app will adhere to the{" "}
+                    <a 
+                      href="https://developers.google.com/terms/api-services-user-data-policy" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="underline text-primary hover:text-primary/80 transition-colors"
+                    >
+                      Google API Services User Data Policy
+                    </a>
+                    , including the Limited Use requirements.
+                  </p>
+                </div>
+              </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Security of Your Information</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">5. Security</h2>
               <p>
-                We use administrative, technical, and physical security measures to help protect your personal information. 
                 While we have taken reasonable steps to secure the personal information you provide to us, please be aware 
                 that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission 
                 can be guaranteed against any interception or other type of misuse.
